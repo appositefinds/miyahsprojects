@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Number Identifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">✨ Angel Number Identifier ✨</h1>
+        <form method="POST" class="form">
+            <label for="angel_number">Enter Angel Number:</label>
+            <input type="text" id="angel_number" name="angel_number" class="input-field" required>
+            
+            <label for="mood">Describe Your Mood (one word):</label>
+            <input type="text" id="mood" name="mood" class="input-field" required>
+            
+            <label for="sun_sign">Select Your Sun Sign:</label>
+            <select id="sun_sign" name="sun_sign" class="dropdown">
+                <option value="Aries">Aries</option>
+                <option value="Taurus">Taurus</option>
+                <option value="Gemini">Gemini</option>
+                <option value="Cancer">Cancer</option>
+                <option value="Leo">Leo</option>
+                <option value="Virgo">Virgo</option>
+                <option value="Libra">Libra</option>
+                <option value="Scorpio">Scorpio</option>
+                <option value="Sagittarius">Sagittarius</option>
+                <option value="Capricorn">Capricorn</option>
+                <option value="Aquarius">Aquarius</option>
+                <option value="Pisces">Pisces</option>
+            </select>
+
+            <label for="moon_sign">Select Your Moon Sign:</label>
+            <select id="moon_sign" name="moon_sign" class="dropdown">
+                <option value="Aries">Aries</option>
+                <option value="Taurus">Taurus</option>
+                <option value="Gemini">Gemini</option>
+                <option value="Cancer">Cancer</option>
+                <option value="Leo">Leo</option>
+                <option value="Virgo">Virgo</option>
+                <option value="Libra">Libra</option>
+                <option value="Scorpio">Scorpio</option>
+                <option value="Sagittarius">Sagittarius</option>
+                <option value="Capricorn">Capricorn</option>
+                <option value="Aquarius">Aquarius</option>
+                <option value="Pisces">Pisces</option>
+            </select>
+
+            <label for="rising_sign">Select Your Rising Sign:</label>
+            <select id="rising_sign" name="rising_sign" class="dropdown">
+                <option value="Aries">Aries</option>
+                <option value="Taurus">Taurus</option>
+                <option value="Gemini">Gemini</option>
+                <option value="Cancer">Cancer</option>
+                <option value="Leo">Leo</option>
+                <option value="Virgo">Virgo</option>
+                <option value="Libra">Libra</option>
+                <option value="Scorpio">Scorpio</option>
+                <option value="Sagittarius">Sagittarius</option>
+                <option value="Capricorn">Capricorn</option>
+                <option value="Aquarius">Aquarius</option>
+                <option value="Pisces">Pisces</option>
+            </select>
+
+            <button type="submit" class="button">Get Interpretation</button>
+        </form>
+
+        {% if interpretation %}
+            <div class="interpretation">
+                <h2>Your Interpretation:</h2>
+                <p>{{ interpretation|safe }}</p>
+            </div>
+        {% endif %}
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
