@@ -1,0 +1,29 @@
+## TableLoadHelper – Enterprise Data Load Automation Tool
+
+TableLoadHelper is a custom internal automation tool designed to streamline and standardize enterprise data load workflows during large-scale system conversions.
+
+### Problem
+Manual Excel-to-XML data preparation introduced:
+- High error rates
+- Inconsistent formatting
+- Late-stage load failures
+- Significant analyst and engineering overhead
+
+### Solution
+TableLoadHelper automates the data load preparation process by:
+- Validating structured Excel templates
+- Applying schema-aware transformations
+- Detecting and reporting errors prior to load
+- Generating load-ready XML artifacts
+
+### High-Level Architecture
+![TableLoadHelper Architecture](docs/architecture-diagram.png)
+
+### Impact
+- Reduced manual load preparation time by 50–70%
+- Improved data quality and consistency
+- Reduced production load failures
+- Improved collaboration between analytics and engineering teams
+
+> Note: This repository contains documentation and representative examples only.  
+> Production code and schemas are proprietary and available for discussion upon request.
