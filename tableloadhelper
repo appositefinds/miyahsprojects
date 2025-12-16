@@ -17,7 +17,7 @@ TableLoadHelper automates the data load preparation process by:
 - Generating load-ready XML artifacts
 
 ### High-Level Architecture
-![TableLoadHelper Architecture](docs/architecture-diagram.png)
+![TableLoadHelper Architecture](architecture-diagram.png)
 
 ### Impact
 - Reduced manual load preparation time by 50–70%
